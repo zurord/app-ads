@@ -1,124 +1,59 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZuritaDev - Desarrollando el futuro</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
 
-        h1, h2, h3 {
-            color: #007BFF;
-        }
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
 
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
 
-        a:hover {
-            text-decoration: underline;
-        }
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
 
-        .faq-section, .issue-section, .feature-section, .zuritadev-section {
-            margin-bottom: 30px;
-        }
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="soyimsweb">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-        .faq-item, .issue-item, .feature-item, .zuritadev-item {
-            margin-bottom: 15px;
-        }
-    </style>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>soyimsweb</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "2452893613";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
 </head>
-
 <body>
-    <div class="container">
-        <h1>ZuritaDev</h1>
-        <h2>Desarrollando el futuro</h2>
-        <p>Desarrollo de aplicaciones móviles personalizadas para iOS y Android</p>
-        <p>Con pasión y dedicación, me especializo en transformar ideas en aplicaciones móviles innovadoras. Cada proyecto es un nuevo desafío, y mi objetivo es crear soluciones que hagan la diferencia en el mundo móvil.</p>
-        
-        <div class="zuritadev-section">
-            <h3>Sección de Destacados:</h3>
-            <div class="zuritadev-item">
-                <strong>Personalización:</strong> "Cada aplicación es única. Trabajo para entender y plasmar cada visión en una experiencia móvil".
-            </div>
-            <div class="zuritadev-item">
-                <strong>Calidad:</strong> "Aplicaciones optimizadas y probadas para garantizar la mejor experiencia de usuario".
-            </div>
-            <div class="zuritadev-item">
-                <strong>Soporte:</strong> "Acompañamiento durante y después del lanzamiento para asegurar el rendimiento óptimo de cada app".
-            </div>
-        </div>
-
-        <h2>SOYIMS</h2>
-        <p>La aplicación diseñada para simplificar y mejorar la vida laboral de los trabajadores. Aquí encontrarás respuestas a tus preguntas y la información que necesitas para aprovechar al máximo todas las funcionalidades de la aplicación.</p>
-
-        <div class="faq-section">
-            <h3>Preguntas Frecuentes (FAQs)</h3>
-            <div class="faq-item">
-                <strong>1. ¿Qué es SoyIMS?</strong>
-                <p>R: SOYIMS es una aplicación diseñada para simplificar y mejorar la vida laboral de los trabajadores...</p>
-            </div>
-            <!-- ... Más preguntas ... -->
-
-            <div class="faq-item">
-                <strong>9. Tengo otras dudas que no se encuentran en este listado. ¿Dónde puedo obtener ayuda?</strong>
-                <p>R: Estamos aquí para ayudarte...</p>
-            </div>
-        </div>
-
-        <div class="issue-section">
-            <h3>Solución de Problemas Comunes</h3>
-            <div class="issue-item">
-                <strong>1. Problema: SOYIMS no se carga en mi dispositivo.</strong>
-                <p>Solución:</p>
-                <ul>
-                    <li>Asegúrate de tener una conexión estable a Internet.</li>
-                    <li>Cierra la aplicación y vuelve a abrirla.</li>
-                    <li>En caso de persistir el problema, intenta reiniciar tu dispositivo.</li>
-                </ul>
-            </div>
-            <!-- ... Más problemas ... -->
-
-            <div class="issue-item">
-                <strong>7. Problema: Las imágenes o textos en la aplicación aparecen distorsionados o fuera de lugar.</strong>
-                <p>Solución:</p>
-                <ul>
-                    <li>Asegúrate de que tu dispositivo esté actualizado...</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="feature-section">
-            <h3>Funciones Principales</h3>
-            <div class="feature-item">
-                <strong>Acceso Rápido a Nómina:</strong> Consulta y descarga tus recibos de nómina digitalmente.
-            </div>
-            <!-- ... Más funciones ... -->
-
-            <div class="feature-item">
-                <strong>Promociones Exclusivas para Empleados:</strong> Descubre ofertas, descuentos y beneficios adicionales.
-            </div>
-        </div>
-
-        <a href="app-ads.txt">Haz clic aquí para acceder al archivo app-ads.txt</a>
-    </div>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
 </body>
-
 </html>
